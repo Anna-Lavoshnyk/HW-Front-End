@@ -1,0 +1,30 @@
+.location {
+  width: 350px;
+  height: 220px;
+  padding: 15px 10px 20px;
+  margin-bottom: 30px;
+  border: dashed 2px red;
+  background-color: green;
+}
+div.text {
+  text-align: justify;
+  width: 600px;
+}
+.img-html {
+  float: left;
+  margin: 0 20px 10px 0;
+  width: 180px;
+  height: 120px;
+}
+.img-css {
+  float: right;
+  margin: 20px 0 20px 20px;
+  width: 150px;
+  height: 100px;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+}

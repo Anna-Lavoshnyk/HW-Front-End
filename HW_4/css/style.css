@@ -1,0 +1,87 @@
+div.quote {
+  background-color: #0d5825;
+  text-align: center;
+  height: 450px;
+  width: 600px;
+  padding: 10px;
+}
+div.quote p {
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+}
+div.quote img {
+  margin-top: 30px;
+  width: 150px;
+  position: relative;
+}
+img:hover {
+  top: -10px;
+}
+.card1 {
+  transform: rotate(-15deg);
+  left: 110px;
+}
+.card2 {
+  transform: rotate(-5deg);
+}
+.card3 {
+  transform: rotate(10deg);
+  left: -110px;
+}
+.layers {
+  position: relative;
+}
+.layers div {
+  margin-top: 30px;
+  height: 300px;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+}
+.layers .pink {
+  background: rgb(246, 142, 197);
+}
+.layers .purple {
+  background: rgb(113, 170, 217);
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+}
+.layers .green {
+  background: rgb(72, 209, 173);
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+}
+div.animation {
+  margin-top: 700px;
+  height: 100px;
+  width: 100px;
+  background: blue;
+  position: relative;
+  animation-name: square;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes square {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 300px;
+  }
+  50% {
+    top: -300px;
+  }
+  75% {
+    left: 300px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
